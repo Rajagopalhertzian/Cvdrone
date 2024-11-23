@@ -5,21 +5,21 @@ Create a computer vision model to detect target reach destination and able to na
 landmark-detection/
 │
 ├── data/                         # Dataset folder
-│   ├── train/                    # Training images
+│   ├── train/                    # Directory containing training images
 │   │   ├── image1.jpg
 │   │   ├── image2.jpg
-│   │   └── ...
-│   ├── labels.json               # JSON file with image-to-label mapping
+│   │   └── ...                   # Additional images
+│   ├── labels.json               # JSON file mapping images to their labels
 │
-├── models/                       # Folder for saving trained models
-│   └── landmark_model.pth        # Trained model weights
+├── models/                       # Directory to save trained model weights
+│   └── landmark_model.pth        # Trained model file
 │
-├── scripts/                      # Code files
-│   ├── train.py                  # Script to train the model
-│   ├── inference.py              # Script for inference on images/videos
+├── scripts/                      # Python scripts for training and inference
+│   ├── train.py                  # Script to train the landmark detection model
+│   ├── inference.py              # Script for performing inference on new images or videos
 │
-├── requirements.txt              # Dependencies
+├── requirements.txt              # Python dependencies required for the project
 │
-├── README.md                     # Project documentation
+├── README.md                     # Project documentation (this file)
 │
-└── main.py                       # Main script to combine vision and GPS
+└── main.py                       # Main script combining vision-based detection and GPS data
